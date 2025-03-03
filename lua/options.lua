@@ -19,3 +19,5 @@ vim.opt.undofile = true
 
 vim.opt.wrap = false
 vim.opt.scrolloff = 4
+
+vim.diagnostic.config({ virtual_text = true, underline = false })
