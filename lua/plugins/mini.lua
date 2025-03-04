@@ -78,7 +78,7 @@ return {
 		version = "*",
 		event = { "BufEnter" },
 		dependencies = { "echasnovski/mini.icons" },
-		opts = { window = { preview = true } },
+		opts = { windows = { preview = true } },
 		keys = {
 			{
 				"<leader>e",
