@@ -9,6 +9,7 @@ return {
 			nixd = {},
 			clangd = {},
 			elixirls = { cmd = "elixir-ls" },
+			blueprint_ls = {},
 			ts_ls = {
 				filetypes = {
 					"javascript",
