@@ -51,6 +51,9 @@ return {
 			cpp = { "clang-format" },
 			rust = { "rustfmt" },
 			elixir = { "mix" },
+
+			json = { "prettier" },
+			html = { "prettier" },
 		},
 	},
 	init = function()
