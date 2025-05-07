@@ -10,6 +10,7 @@ return {
 			clangd = {},
 			elixirls = { cmd = "elixir-ls" },
 			blueprint_ls = {},
+			gopls = {},
 			zls = {},
 			ts_ls = {
 				filetypes = {
