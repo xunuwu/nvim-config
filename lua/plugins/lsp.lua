@@ -12,6 +12,7 @@ return {
 			blueprint_ls = {},
 			gopls = {},
 			zls = {},
+			cssls = {},
 			ts_ls = {
 				filetypes = {
 					"javascript",
