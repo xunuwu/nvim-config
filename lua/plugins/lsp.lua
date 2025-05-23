@@ -1,34 +1,20 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPost", "BufNewFile" },
-	dependencies = { { "saghen/blink.cmp", version = "*" } },
-	opts = {
-		servers = {
-			lua_ls = { settings = { Lua = { telemetry = { enable = false } } } },
-			nil_ls = {},
-			nixd = {},
-			clangd = {},
-			elixirls = { cmd = "elixir-ls" },
-			blueprint_ls = {},
-			gopls = {},
-			zls = {},
-			cssls = {},
-			ts_ls = {
-				filetypes = {
-					"javascript",
-					"javascriptreact",
-					"javascript.jsx",
-					"typescript",
-					"typescriptreact",
-					"typescriptreact.tsx",
-				},
-			},
-		},
-	},
-	config = function(_, opts)
-		for name, config in pairs(opts.servers) do
-			config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-			require("lspconfig")[name].setup(config)
-		end
+	config = function()
+		vim.lsp.config("*", {
+			root_markers = { ".git", ".jj" },
+		})
+
+		vim.lsp.config("elixirls", { cmd = "elixir-ls" })
+
+		vim.lsp.enable("lua_ls")
+		vim.lsp.enable("nil_ls")
+		vim.lsp.enable("nixd")
+		vim.lsp.enable("clangd")
+		vim.lsp.enable("elixirls")
+		vim.lsp.enable("gopls")
+		vim.lsp.enable("zls")
+		vim.lsp.enable("cssls")
+		vim.lsp.enable("vtsls")
 	end,
 }
