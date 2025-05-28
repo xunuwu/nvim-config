@@ -6,6 +6,11 @@ return {
 		opts = {},
 	},
 	{
+		"echasnovski/mini.extra",
+		version = "*",
+		opts = {},
+	},
+	{
 		"echasnovski/mini.align",
 		version = "*",
 		opts = {},
@@ -52,24 +57,42 @@ return {
 				function()
 					MiniPick.builtin.files()
 				end,
+				desc = "files",
 			},
 			{
 				"<leader>sd",
 				function()
 					MiniPick.builtin.grep_live()
 				end,
+				desc = "live grep",
 			},
 			{
 				"<leader>sh",
 				function()
 					MiniPick.builtin.help()
 				end,
+				desc = "help",
+			},
+			{
+				"<leader>sH",
+				function()
+					MiniExtra.pickers.history()
+				end,
+				desc = "history",
 			},
 			{
 				"<leader>sb",
 				function()
 					MiniPick.builtin.buffers()
 				end,
+				desc = "buffers",
+			},
+			{
+				"<leader>sc",
+				function()
+					MiniExtra.pickers.commands()
+				end,
+				desc = "commands",
 			},
 		},
 	},
@@ -85,7 +108,7 @@ return {
 				function()
 					MiniFiles.open(vim.fn.expand("%:h"))
 				end,
-				{ desc = "Explore files" },
+				desc = "Explore files",
 			},
 		},
 	},
