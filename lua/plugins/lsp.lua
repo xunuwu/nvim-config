@@ -13,6 +13,7 @@ return {
 			"zls",
 			"cssls",
 			"vtsls",
+			"roslyn_ls",
 		})
 	end,
 }
