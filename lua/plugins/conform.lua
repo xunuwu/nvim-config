@@ -42,6 +42,12 @@ return {
 
 			return { timeout_ms = 500, lsp_format = "fallback" }
 		end,
+		formatters = {
+			qmlformat = {
+				command = "qmlformat",
+				args = { "$FILENAME" },
+			},
+		},
 		formatters_by_ft = {
 			lua = { "stylua" },
 			luau = { "stylua" },
@@ -54,6 +60,8 @@ return {
 
 			json = { "prettier" },
 			html = { "prettier" },
+
+			qml = { "qmlformat" },
 		},
 	},
 	init = function()
