@@ -14,6 +14,7 @@ return {
 			"cssls",
 			"vtsls",
 			"roslyn_ls",
+			"gleam",
 		})
 	end,
 }
