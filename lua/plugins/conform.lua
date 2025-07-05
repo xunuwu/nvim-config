@@ -57,6 +57,7 @@ return {
 			cpp = { "clang-format" },
 			rust = { "rustfmt" },
 			elixir = { "mix" },
+			gleam = { "gleam" },
 
 			json = { "prettier" },
 			html = { "prettier" },
