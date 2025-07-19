@@ -60,6 +60,7 @@ return {
 			gleam = { "gleam" },
 
 			json = { "prettier" },
+			javascript = { "prettier" },
 			html = { "prettier" },
 
 			qml = { "qmlformat" },
