@@ -58,6 +58,7 @@ return {
 			rust = { "rustfmt" },
 			elixir = { "mix" },
 			gleam = { "gleam" },
+			go = { "gofmt" },
 
 			json = { "prettier" },
 			javascript = { "prettier" },
