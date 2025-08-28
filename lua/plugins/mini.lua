@@ -1,17 +1,17 @@
 return {
 	{
-		"echasnovski/mini.trailspace",
+		"nvim-mini/mini.trailspace",
 		version = "*",
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {},
 	},
 	{
-		"echasnovski/mini.extra",
+		"nvim-mini/mini.extra",
 		version = "*",
 		opts = {},
 	},
 	{
-		"echasnovski/mini.align",
+		"nvim-mini/mini.align",
 		version = "*",
 		opts = {},
 		keys = {
@@ -20,7 +20,7 @@ return {
 		},
 	},
 	{
-		"echasnovski/mini.icons",
+		"nvim-mini/mini.icons",
 		version = "*",
 		lazy = true,
 		config = function()
@@ -30,16 +30,16 @@ return {
 		end,
 	},
 	{
-		"echasnovski/mini.statusline",
+		"nvim-mini/mini.statusline",
 		event = "UIEnter",
-		dependencies = { "echasnovski/mini.icons" },
+		dependencies = { "nvim-mini/mini.icons" },
 		version = "*",
 		opts = {},
 	},
 	{
-		"echasnovski/mini.pick",
+		"nvim-mini/mini.pick",
 		version = "*",
-		dependencies = { "echasnovski/mini.icons" },
+		dependencies = { "nvim-mini/mini.icons" },
 		opts = {
 			options = { use_cache = true },
 			window = {
@@ -97,10 +97,10 @@ return {
 		},
 	},
 	{
-		"echasnovski/mini.files",
+		"nvim-mini/mini.files",
 		version = "*",
 		event = { "BufEnter" },
-		dependencies = { "echasnovski/mini.icons" },
+		dependencies = { "nvim-mini/mini.icons" },
 		opts = { windows = { preview = true } },
 		keys = {
 			{
