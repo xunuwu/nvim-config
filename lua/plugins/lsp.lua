@@ -15,6 +15,7 @@ return {
 			"vtsls",
 			"roslyn_ls",
 			"gleam",
+			"basedpyright",
 		})
 	end,
 }
