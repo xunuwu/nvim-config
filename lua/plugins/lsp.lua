@@ -16,6 +16,7 @@ return {
 			"roslyn_ls",
 			"gleam",
 			"basedpyright",
+			"ocamllsp",
 		})
 	end,
 }
