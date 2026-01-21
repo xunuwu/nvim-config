@@ -59,6 +59,7 @@ return {
 			elixir = { "mix" },
 			gleam = { "gleam" },
 			go = { "gofmt" },
+			ocaml = { "ocamlformat" },
 
 			json = { "prettier" },
 			javascript = { "prettier" },
