@@ -17,6 +17,7 @@ return {
 			"gleam",
 			"basedpyright",
 			"ocamllsp",
+			"hls",
 		})
 	end,
 }
