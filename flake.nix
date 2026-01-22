@@ -8,7 +8,7 @@
   outputs = {nixpkgs, ...} @ inputs: let
     pkgs = import nixpkgs {system = "x86_64-linux";};
   in {
-    packages.${pkgs.system}.default = pkgs.wrapNeovimUnstable inputs.neovim-nightly-overlay.packages.${pkgs.system}.default (pkgs.neovimUtils.makeNeovimConfig {
+    packages.${pkgs.stdenv.hostPlatform.system}.default = pkgs.wrapNeovimUnstable inputs.neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default (pkgs.neovimUtils.makeNeovimConfig {
       customRC = ''
         set runtimepath^=${./.}
         let g:sqlite_clib_path = '${pkgs.sqlite.out}/lib/libsqlite3.so'
