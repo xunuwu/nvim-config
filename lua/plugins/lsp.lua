@@ -18,6 +18,7 @@ return {
 			"basedpyright",
 			"ocamllsp",
 			"hls",
+			"slangd",
 		})
 	end,
 }
